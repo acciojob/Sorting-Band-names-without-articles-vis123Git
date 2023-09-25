@@ -1,14 +1,8 @@
-//your code here
 
-// Function to remove articles from a string and return the cleaned string
 function removeArticles(name) {
-  // List of articles to remove
   const articles = ['a', 'an', 'the'];
-
-  // Split the name into words
   const words = name.split(' ');
 
-  // Remove articles from the beginning of the name
   while (articles.includes(words[0].toLowerCase())) {
     words.shift();
   }
@@ -25,7 +19,7 @@ bandNames.sort((a, b) => {
 });
 
 // Get the ul element by its id
-const bandList = document.getElementById('band');
+const bandList = document.getElementByTagName('ul')
 
 // Iterate over the sorted band names and create list items
 bandNames.forEach(name => {
