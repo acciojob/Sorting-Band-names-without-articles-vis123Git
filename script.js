@@ -1,3 +1,7 @@
+// Given array of band names
+let bandNames = ['The Beatles', 'Led Zeppelin', 'Pink Floyd', 'The Rolling Stones', 'Nirvana'];
+
+// Function to remove articles and sort band names
 function sortBandNames(names) {
   const articles = ['a', 'an', 'the'];
 
